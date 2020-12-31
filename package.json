@@ -1,0 +1,38 @@
+{
+  "name": "@hacss/shortcuts",
+  "version": "1.0.0",
+  "description": "A default Hacss configuration that includes colors, spacing, typography, and more.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"You should add some tests.\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hacss/shortcuts.git"
+  },
+  "keywords": [
+    "hacss",
+    "atomic",
+    "css",
+    "design",
+    "system",
+    "tokens",
+    "colors",
+    "typography",
+    "spacing",
+    "shadows",
+    "borders",
+    "styled",
+    "emotion",
+    "tailwind",
+    "tachyons",
+    "utility",
+    "classes"
+  ],
+  "author": "Nick Saunders",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hacss/shortcuts/issues"
+  },
+  "homepage": "https://hacss.io"
+}
