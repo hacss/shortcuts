@@ -4,7 +4,7 @@
   "description": "A default Hacss configuration that includes colors, spacing, typography, and more.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"You should add some tests.\""
+    "test": "node test.js"
   },
   "repository": {
     "type": "git",
@@ -34,5 +34,25 @@
   "bugs": {
     "url": "https://github.com/hacss/shortcuts/issues"
   },
-  "homepage": "https://hacss.io"
+  "homepage": "https://hacss.io",
+  "devDependencies": {
+    "@hacss/eslint-config": "^1.1.0",
+    "@hacss/prettier-config": "^1.0.0",
+    "eslint": "^7.16.0",
+    "husky": "^4.3.6",
+    "lint-staged": "^10.5.3",
+    "prettier": "^2.2.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --parser babel --write",
+      "eslint --cache --fix",
+      "npm test"
+    ]
+  }
 }

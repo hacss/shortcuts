@@ -1,8 +1,5 @@
-module.exports = ({
-  fontFamily = "sans-serif",
-} = {}) => ({
+module.exports = ({ fontFamily = "sans-serif" } = {}) => ({
   variables: {
-  
     // color palette
     blue05: "hsl(208,100%,98%)",
     blue10: "hsl(208,100%,92%)",
@@ -84,7 +81,7 @@ module.exports = ({
     yellow70: "hsl(49,100%,44%)",
     yellow80: "hsl(49,100%,34%)",
     yellow90: "hsl(49,100%,25%)",
-   
+
     // spacing
     space1: "0.0625rem",
     space2: "0.125rem",
@@ -113,27 +110,47 @@ module.exports = ({
     space384: "24rem",
     space448: "28rem",
     space512: "32rem",
-    
+
     // border thickness
     border1: "0.0625rem",
     border2: "0.125rem",
     border4: "0.25rem",
     border8: "0.5rem",
-    
+
     // typography
     font: {
-      h1: `400 3.2rem/4rem ${fontFamily.h1 || fontFamily.default || fontFamily}`,
-      h2: `400 2.4rem/3rem ${fontFamily.h2 || fontFamily.default || fontFamily}`,
-      h3: `400 2.0rem/2.5rem ${fontFamily.h3 || fontFamily.default || fontFamily}`,
-      h4: `400 1.6rem/2rem ${fontFamily.h4 || fontFamily.default || fontFamily}`,
-      h5: `700 1.2rem/1.5rem ${fontFamily.h5 || fontFamily.default || fontFamily}`,
-      h6: `700 0.8rem/1rem ${fontFamily.h6 || fontFamily.default || fontFamily}`,
-      body1: `400 1rem/1.5rem ${fontFamily.body1 || fontFamily.default || fontFamily}`,
-      body2: `400 0.75rem/1.5rem ${fontFamily.body2 || fontFamily.default || fontFamily}`,
-      caption: `400 0.625/1rem ${fontFamily.caption || fontFamily.default || fontFamily}`,
-      button: `700 0.875rem/0.875rem ${fontFamily.button || fontFamily.default || fontFamily}`,
+      h1: `400 3.2rem/4rem ${
+        fontFamily.h1 || fontFamily.default || fontFamily
+      }`,
+      h2: `400 2.4rem/3rem ${
+        fontFamily.h2 || fontFamily.default || fontFamily
+      }`,
+      h3: `400 2.0rem/2.5rem ${
+        fontFamily.h3 || fontFamily.default || fontFamily
+      }`,
+      h4: `400 1.6rem/2rem ${
+        fontFamily.h4 || fontFamily.default || fontFamily
+      }`,
+      h5: `700 1.2rem/1.5rem ${
+        fontFamily.h5 || fontFamily.default || fontFamily
+      }`,
+      h6: `700 0.8rem/1rem ${
+        fontFamily.h6 || fontFamily.default || fontFamily
+      }`,
+      body1: `400 1rem/1.5rem ${
+        fontFamily.body1 || fontFamily.default || fontFamily
+      }`,
+      body2: `400 0.75rem/1.5rem ${
+        fontFamily.body2 || fontFamily.default || fontFamily
+      }`,
+      caption: `400 0.625/1rem ${
+        fontFamily.caption || fontFamily.default || fontFamily
+      }`,
+      button: `700 0.875rem/0.875rem ${
+        fontFamily.button || fontFamily.default || fontFamily
+      }`,
     },
-    
+
     // corner radius
     "border-radius": {
       xs: "0.125rem",
@@ -142,17 +159,19 @@ module.exports = ({
       lg: "1rem",
       full: "9999px",
     },
-    
+
     // shadows
     "box-shadow": {
       sm: "0 0.125rem 0.125rem rgba(0,0,0,0.1)",
       md: "0 0.25rem 0.25rem rgba(0,0,0,0.1),0 0.5rem 0.5rem rgba(0,0,0,0.08)",
-      lg: "0 0.25rem 0.25rem rgba(0,0,0,0.1),0 0.5rem 0.5rem rgba(0,0,0,0.08),0 0.75rem 0.75rem rgba(0,0,0,0.06),0 1rem 1rem rgba(0,0,0,0.04)",
-      xl: "0 0.25rem 0.25rem rgba(0,0,0,0.1),0 0.5rem 0.5rem rgba(0,0,0,0.09),0 0.75rem 0.75rem rgba(0,0,0,0.08),0 1rem 1rem rgba(0,0,0,0.07),0 1.25rem 1.25rem rgba(0,0,0,0.06),0 1.5rem 1.5rem rgba(0,0,0,0.05)",
-      xxl: "0 0.25rem 0.25rem rgba(0,0,0,0.1),0 0.5rem 0.5rem rgba(0,0,0,0.09),0 0.75rem 0.75rem rgba(0,0,0,0.08),0 1rem 1rem rgba(0,0,0,0.07),0 1.25rem 1.25rem rgba(0,0,0,0.06),0 1.5rem 1.5rem rgba(0,0,0,0.05),0 1.75rem 1.75rem rgba(0,0,0,0.04),0 2rem 2rem rgba(0,0,0,0.03)",
+      lg:
+        "0 0.25rem 0.25rem rgba(0,0,0,0.1),0 0.5rem 0.5rem rgba(0,0,0,0.08),0 0.75rem 0.75rem rgba(0,0,0,0.06),0 1rem 1rem rgba(0,0,0,0.04)",
+      xl:
+        "0 0.25rem 0.25rem rgba(0,0,0,0.1),0 0.5rem 0.5rem rgba(0,0,0,0.09),0 0.75rem 0.75rem rgba(0,0,0,0.08),0 1rem 1rem rgba(0,0,0,0.07),0 1.25rem 1.25rem rgba(0,0,0,0.06),0 1.5rem 1.5rem rgba(0,0,0,0.05)",
+      xxl:
+        "0 0.25rem 0.25rem rgba(0,0,0,0.1),0 0.5rem 0.5rem rgba(0,0,0,0.09),0 0.75rem 0.75rem rgba(0,0,0,0.08),0 1rem 1rem rgba(0,0,0,0.07),0 1.25rem 1.25rem rgba(0,0,0,0.06),0 1.5rem 1.5rem rgba(0,0,0,0.05),0 1.75rem 1.75rem rgba(0,0,0,0.04),0 2rem 2rem rgba(0,0,0,0.03)",
       inner: "inset 0 0.125rem 0.25rem rgba(0,0,0,0.1)",
     },
-
   },
 
   atScopes: {
@@ -160,5 +179,4 @@ module.exports = ({
     md: "media screen and (min-width:37.5em) and (max-width:62.49999em)",
     lg: "media screen and (min-width:62.5em)",
   },
-
 });
