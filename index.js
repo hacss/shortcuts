@@ -1,6 +1,5 @@
 module.exports = ({
-  headingFontFamily,
-  defaultFontFamily = "sans-serif",
+  fontFamily = "sans-serif",
 } = {}) => ({
   variables: {
   
@@ -123,16 +122,16 @@ module.exports = ({
     
     // typography
     font: {
-      h1: `400 3.2rem/4rem ${headingFontFamily || defaultFontFamily}`,
-      h2: `400 2.4rem/3rem ${headingFontFamily || defaultFontFamily}`,
-      h3: `400 2.0rem/2.5rem ${headingFontFamily || defaultFontFamily}`,
-      h4: `400 1.6rem/2rem ${headingFontFamily || defaultFontFamily}`,
-      h5: `700 1.2rem/1.5rem ${headingFontFamily || defaultFontFamily}`,
-      h6: `700 0.8rem/1rem ${headingFontFamily || defaultFontFamily}`,
-      body1: `400 1rem/1.5rem ${defaultFontFamily}`,
-      body2: `400 0.75rem/1.5rem ${defaultFontFamily}`,
-      caption: `400 0.625/1rem ${defaultFontFamily}`,
-      button: `700 0.875rem/0.875rem ${defaultFontFamily}`,
+      h1: `400 3.2rem/4rem ${fontFamily.h1 || fontFamily.default || fontFamily}`,
+      h2: `400 2.4rem/3rem ${fontFamily.h2 || fontFamily.default || fontFamily}`,
+      h3: `400 2.0rem/2.5rem ${fontFamily.h3 || fontFamily.default || fontFamily}`,
+      h4: `400 1.6rem/2rem ${fontFamily.h4 || fontFamily.default || fontFamily}`,
+      h5: `700 1.2rem/1.5rem ${fontFamily.h5 || fontFamily.default || fontFamily}`,
+      h6: `700 0.8rem/1rem ${fontFamily.h6 || fontFamily.default || fontFamily}`,
+      body1: `400 1rem/1.5rem ${fontFamily.body1 || fontFamily.default || fontFamily}`,
+      body2: `400 0.75rem/1.5rem ${fontFamily.body2 || fontFamily.default || fontFamily}`,
+      caption: `400 0.625/1rem ${fontFamily.caption || fontFamily.default || fontFamily}`,
+      button: `700 0.875rem/0.875rem ${fontFamily.button || fontFamily.default || fontFamily}`,
     },
     
     // corner radius
