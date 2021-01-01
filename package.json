@@ -4,6 +4,7 @@
   "description": "A default Hacss configuration that includes colors, spacing, typography, and more.",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint --cache *.js --ignore-pattern !.eslintrc.js && prettier --parser babel --check *.js",
     "test": "node test.js"
   },
   "repository": {
@@ -54,5 +55,6 @@
       "eslint --cache --fix",
       "npm test"
     ]
-  }
+  },
+  "prettier": "@hacss/prettier-config"
 }
