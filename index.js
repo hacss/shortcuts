@@ -11,6 +11,7 @@ module.exports = ({ fontFamily = "sans-serif" } = {}) => ({
     blue70: "hsl(208,100%,35%)",
     blue80: "hsl(208,100%,30%)",
     blue90: "hsl(208,100%,25%)",
+    blue95: "hsl(208,100%,14%)",
     gray05: "hsl(220,11%,98%)",
     gray10: "hsl(220,11%,92%)",
     gray20: "hsl(220,11%,84%)",
@@ -21,6 +22,7 @@ module.exports = ({ fontFamily = "sans-serif" } = {}) => ({
     gray70: "hsl(220,11%,41%)",
     gray80: "hsl(220,11%,33%)",
     gray90: "hsl(220,11%,25%)",
+    gray95: "hsl(220,11%,18%)",
     green05: "hsl(123,41%,98%)",
     green10: "hsl(123,41%,92%)",
     green20: "hsl(123,41%,83%)",
@@ -31,6 +33,7 @@ module.exports = ({ fontFamily = "sans-serif" } = {}) => ({
     green70: "hsl(123,41%,38%)",
     green80: "hsl(123,41%,32%)",
     green90: "hsl(123,41%,25%)",
+    green95: "hsl(123,41%,15%)",
     orange05: "hsl(28,100%,98%)",
     orange10: "hsl(28,100%,92%)",
     orange20: "hsl(28,100%,84%)",
@@ -41,6 +44,7 @@ module.exports = ({ fontFamily = "sans-serif" } = {}) => ({
     orange70: "hsl(28,100%,41%)",
     orange80: "hsl(28,100%,33%)",
     orange90: "hsl(28,100%,25%)",
+    orange95: "hsl(28,100%,13%)",
     pink05: "hsl(324,100%,98%)",
     pink10: "hsl(324,100%,92%)",
     pink20: "hsl(324,100%,84%)",
@@ -51,6 +55,7 @@ module.exports = ({ fontFamily = "sans-serif" } = {}) => ({
     pink70: "hsl(324,100%,43%)",
     pink80: "hsl(324,100%,34%)",
     pink90: "hsl(324,100%,25%)",
+    pink95: "hsl(324,100%,13%)",
     purple05: "hsl(266,61%,98%)",
     purple10: "hsl(266,61%,92%)",
     purple20: "hsl(266,61%,84%)",
@@ -61,6 +66,7 @@ module.exports = ({ fontFamily = "sans-serif" } = {}) => ({
     purple70: "hsl(266,61%,42%)",
     purple80: "hsl(266,61%,34%)",
     purple90: "hsl(266,61%,25%)",
+    purple95: "hsl(266,61%,17%)",
     red05: "hsl(0,87%,98%)",
     red10: "hsl(0,87%,92%)",
     red20: "hsl(0,87%,82%)",
@@ -71,6 +77,7 @@ module.exports = ({ fontFamily = "sans-serif" } = {}) => ({
     red70: "hsl(0,87%,36%)",
     red80: "hsl(0,87%,30%)",
     red90: "hsl(0,87%,25%)",
+    red95: "hsl(0,87%,14%)",
     yellow05: "hsl(49,100%,98%)",
     yellow10: "hsl(49,100%,92%)",
     yellow20: "hsl(49,100%,84%)",
@@ -81,6 +88,7 @@ module.exports = ({ fontFamily = "sans-serif" } = {}) => ({
     yellow70: "hsl(49,100%,44%)",
     yellow80: "hsl(49,100%,34%)",
     yellow90: "hsl(49,100%,25%)",
+    yellow95: "hsl(49,100%,12%)",
 
     // spacing
     space1: "0.0625rem",
@@ -146,7 +154,7 @@ module.exports = ({ fontFamily = "sans-serif" } = {}) => ({
       caption: `400 0.625/1rem ${
         fontFamily.caption || fontFamily.default || fontFamily
       }`,
-      button: `700 0.875rem/0.875rem ${
+      button: `500 0.875rem/0.875rem ${
         fontFamily.button || fontFamily.default || fontFamily
       }`,
     },
