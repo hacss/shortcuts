@@ -40,3 +40,16 @@ fonts.forEach(key => {
     `Font "${key}" does not include configured family: ${fontFamily}`,
   );
 });
+
+const colors = {
+  blue: "#00f",
+  red: "#ff0",
+  green: "#f00",
+};
+
+Object.entries(colors).forEach(([key, val]) => {
+  const shadows = make({ colors }).variables["box-shadow"];
+  ["ring", "offset"].forEach(x => {
+    assert.match(shadows[`outline-${x}-${key}`], new RegExp(val + "$"));
+  });
+});
