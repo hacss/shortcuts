@@ -166,13 +166,18 @@ module.exports = ({
     },
 
     // corner radius
-    "border-radius": {
-      xs: "0.125rem",
-      sm: "0.25rem",
-      md: "0.5rem",
-      lg: "1rem",
-      full: "9999px",
-    },
+    ...["", "-top-left", "-top-right", "-bottom-left", "-bottom-right"]
+      .map(x => [
+        `border${x}-radius`,
+        {
+          xs: "0.125rem",
+          sm: "0.25rem",
+          md: "0.5rem",
+          lg: "1rem",
+          full: "9999px",
+        },
+      ])
+      .reduce((obj, [key, value]) => ({ ...obj, [key]: value }), {}),
 
     // shadows
     "box-shadow": {

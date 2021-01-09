@@ -1,6 +1,6 @@
 {
   "name": "@hacss/shortcuts",
-  "version": "2.0.0-0",
+  "version": "2.0.0-1",
   "description": "A default Hacss configuration that includes colors, spacing, typography, and more.",
   "main": "index.js",
   "scripts": {
