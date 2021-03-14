@@ -157,7 +157,7 @@ module.exports = ({
       body2: `400 0.75rem/1.5rem ${
         fontFamily.body2 || fontFamily.default || fontFamily
       }`,
-      caption: `400 0.625/1rem ${
+      caption: `400 0.625rem/1rem ${
         fontFamily.caption || fontFamily.default || fontFamily
       }`,
       button: `500 0.875rem/0.875rem ${
@@ -193,16 +193,10 @@ module.exports = ({
 
       // emulated outlines
       ...Object.entries(colors)
-        .map(([key, value]) => [
-          `outline-offset-${key}`,
-          `0 0 0 0.125rem ${value}`,
-        ])
+        .map(([key, value]) => [`outline-sm-${key}`, `0 0 0 0.125rem ${value}`])
         .reduce((obj, [key, value]) => ({ ...obj, [key]: value }), {}),
       ...Object.entries(colors)
-        .map(([key, value]) => [
-          `outline-ring-${key}`,
-          `0 0 0 0.25rem ${value}`,
-        ])
+        .map(([key, value]) => [`outline-lg-${key}`, `0 0 0 0.25rem ${value}`])
         .reduce((obj, [key, value]) => ({ ...obj, [key]: value }), {}),
     },
 

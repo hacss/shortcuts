@@ -49,7 +49,7 @@ const colors = {
 
 Object.entries(colors).forEach(([key, val]) => {
   const shadows = make({ colors }).variables["box-shadow"];
-  ["ring", "offset"].forEach(x => {
+  ["lg", "sm"].forEach(x => {
     assert.match(shadows[`outline-${x}-${key}`], new RegExp(val + "$"));
   });
 });
